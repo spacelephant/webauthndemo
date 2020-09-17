@@ -330,6 +330,12 @@ function makeCredential(advancedOptions) {
       makeCredentialOptions.extensions.uvm = true;
     }
 
+    /*
+    if (isChecked('#switch-authnSel')) {
+      makeCredentialOptions.extensions.authnSel = true;
+    }
+    */
+
     console.log('sending attestation request:');
     console.log(makeCredentialOptions);
 

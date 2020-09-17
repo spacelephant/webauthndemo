@@ -86,12 +86,42 @@
             <option value="discouraged">Discouraged</option>
           </select>
         </div>
+
+
+
         <div class="mdl-list__item">
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="switch-uvm">
             <input type="checkbox" id="switch-uvm" class="mdl-checkbox__input">
-            <span class="mdl-checkbox__label">User Verification Method</span>
+            <span class="mdl-checkbox__label">Enable uvm Extension</span>
           </label>
         </div>
+        <div class="mdl-list__item">
+          <label for="userVerificationMethod" class="attachment">User Verification Method</label>
+          <select id="userVerificationMethod" class="attachment">
+            <option value="none">None</option>
+            <option value="fingerprint">Fingerprint</option>
+            <option value="screenLock">Screen Lock</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+
+
+        <div class="mdl-list__item">
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="switch-authnSel">
+            <input type="checkbox" id="switch-authnSel" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">Enable authnSel Extension</span>
+          </label>
+        </div>
+        <div class="mdl-list__item">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="AAGUIDs">
+            <label class="mdl-textfield__label" for="AAGUIDs">List of AAGUID</label>
+            <span class="mdl-textfield__error">Formatting error</span>
+          </div>
+        </div>
+
+
+
         <div class="mdl-list__item">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="customTimeout">
